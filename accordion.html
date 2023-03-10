@@ -1,0 +1,143 @@
+<!-- 
+ *  Author: Michelle Cavalcanti Maia
+ *  HTML + CSS Examples
+ *  Responsive Real-World Websites with HTML and CSS - Udemy Course
+ *  My website: https://www.michellemaia.com
+ *  March 2023
+ *
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>Portfolio | Michelle Maia</title>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button class="btn-app">About</button>
+      <button class="btn-app">Who am I?</button>
+      <button class="btn-app">Don't click me!</button>
+    </menu>
+    <section>
+      <a href="accordion.html" class="component-link current-component"
+        >Accordion Component</a
+      >
+      <a href="#" class="component-link">Carousel Component</a>
+      <a href="index.html" class="component-link">Table Component</a>
+      <a href="pagination.html" class="component-link">Pagination Component</a>
+      <a href="#" class="component-link">Hero Section</a>
+      <a href="#" class="component-link">Product Details</a>
+      <a href="#" class="component-link">Website</a>
+    </section>
+    <main>
+      <div class="accordion">
+        <div class="item">
+          <p class="number">01</p>
+          <p class="text">What is the ESP32?</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          <div class="hidden-box">
+            <p>
+              ESP32 is a series of low-cost, low-power system-on-a-chip
+              micro-controllers designed by Espressif in Shanghai, China. It has
+              integrated Wi-Fi and dual-mode Bluetooth radios. It has many of
+              the capabilities of the Arduino and can be programmed with the
+              Arduino IDE software and so is an easy upgrade path to wireless
+              communications for Arduino users.
+            </p>
+          </div>
+        </div>
+
+        <div class="item open">
+          <p class="number">02</p>
+          <p class="text">How to add ESP32 development board on Arduino IDE?</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          <div class="hidden-box">
+            <p>
+              There is an add-on for the Arduino IDE that allows you to program
+              the ESP32 using the Arduino IDE and its programming language.
+            </p>
+            <ul>
+              <li>
+                For installation instructions of Arduino-ESP32, please refer to
+                "arduino-ide getting started".
+              </li>
+              <li>
+                For instructions on how to add development boards on Arduino
+                IDE, please refer to "arduino Cores".
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="item">
+          <p class="number">03</p>
+          <p class="text">Raspberry Pi Pico vs. ESP32: Which is Better?</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          <div class="hidden-box">
+            <p>
+              ESP32 has a few advantages over Raspberry Pi Pico. First, it has
+              more processing power and memory than the Pico, so it can handle
+              more complex applications. Second, it has a built-in USB port, so
+              it can be directly connected to a computer without the need for an
+              external USB controller.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <h2>Description</h2>
+      <p>
+        CSS accordions are widely used for expandable and collapsible menus,
+        snippets, images, videos, FAQs, lists, and article excerpts.
+      </p>
+    </aside>
+  </body>
+</html>

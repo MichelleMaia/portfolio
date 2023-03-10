@@ -1,0 +1,229 @@
+/*
+ *  Author: Michelle Cavalcanti Maia
+ *  HTML + CSS Examples
+ *  Responsive Real-World Websites with HTML and CSS - Udemy Course
+ *  My website: https://www.michellemaia.com
+ *  March 2023
+ *
+ */
+/********** Initial App *********/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+  font-size: 24px;
+  height: 100vh;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 80px 400px 1fr 250px;
+  grid-template-rows: 80px 1fr;
+}
+nav,
+section,
+main,
+aside {
+  padding-top: 24px;
+}
+nav {
+  text-align: center;
+  background-color: #343a40;
+  color: white;
+  grid-row: 1 / -1;
+}
+menu {
+  background-color: #087f5b;
+  grid-column: 2 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 40px;
+}
+.btn-app {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #0ca678;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 8px 12px;
+}
+.btn-app:last-child {
+  background-color: #d6336c;
+  margin-left: auto;
+}
+section {
+  background-color: #e9ecef;
+  padding: 40px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.component-link:link,
+.component-link:visited {
+  background-color: #adb5bd;
+  color: #343a40;
+  text-decoration: none;
+  height: 96px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.component-link:hover,
+.component-link:active,
+.component-link.current-component {
+  background-color: #343a40;
+  color: #adb5bd;
+}
+aside {
+  background-color: #e9ecef;
+  padding-left: 24px;
+}
+h2 {
+  margin-bottom: 24px;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+/********** Table *********/
+table {
+  align-self: flex-start;
+  width: 80%;
+  margin-top: 100px;
+  font-size: 18px;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 16px 24px;
+  text-align: left;
+}
+thead tr {
+  background-color: #087f5b;
+  color: #fff;
+}
+thead th {
+  width: 25%;
+}
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+/********** Pagination *********/
+.pagination {
+  align-self: flex-start;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.btn {
+  border: 1px solid #087f5b;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #087f5b;
+}
+.btn:hover .btn-icon {
+  stroke: #fff;
+}
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #087f5b;
+}
+.page-link:link,
+.page-link:visited {
+  font-size: 18px;
+  color: #343a40;
+  text-decoration: none;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-link:hover,
+.page-link:active,
+.page-link.page-link--current {
+  background-color: #087f5b;
+  color: #fff;
+}
+.dots {
+  color: #868e96;
+}
+
+/********** Accordion *********/
+.accordion {
+  align-self: flex-start;
+  width: 80%;
+  margin-top: 100px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.item {
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
+  align-items: center;
+}
+.number,
+.text {
+  font-size: 24px;
+  font-weight: 500;
+}
+.number {
+  color: #ced4da;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: #087f5b;
+}
+.hidden-box {
+  grid-column: 2;
+  display: none;
+}
+.hidden-box p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.hidden-box ul {
+  color: #868e96;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.open {
+  border-top: 4px solid #087f5b;
+}
+.open .hidden-box {
+  display: block;
+}
+.open .number,
+.open .text {
+  color: #087f5b;
+}
