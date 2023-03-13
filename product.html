@@ -1,0 +1,98 @@
+<!-- 
+ *  Author: Michelle Cavalcanti Maia
+ *  HTML + CSS Examples
+ *  Responsive Real-World Websites with HTML and CSS - Udemy Course
+ *  My website: https://www.michellemaia.com
+ *  March 2023
+ *
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>Portfolio | Michelle Maia</title>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button class="btn-app">About</button>
+      <button class="btn-app">Who am I?</button>
+      <button class="btn-app">Don't click me!</button>
+    </menu>
+    <section>
+      <a href="accordion.html" class="component-link">Accordion Component</a>
+      <a href="carousel.html" class="component-link">Carousel Component</a>
+      <a href="index.html" class="component-link">Table Component</a>
+      <a href="pagination.html" class="component-link">Pagination Component</a>
+      <a href="hero.html" class="component-link">Hero Section</a>
+      <a href="product.html" class="component-link current-component"
+        >Product Details</a
+      >
+      <a href="#" class="component-link">Magazine Website</a>
+      <a href="#" class="component-link">Store Website</a>
+    </section>
+    <main>
+      <article class="product">
+        <h2 class="product-title">FRDM-KL25Z Freedom Development Platform</h2>
+        <!-- <div class="container"> -->
+        <img
+          src="img/FRDM-KL25.jpg"
+          alt="Chuck Taylor All Star Shoe"
+          height="237"
+          width="316"
+          class="product-img"
+        />
+        <div class="product-info">
+          <div class="product-price">
+            <p class="price"><strong>$17.50</strong></p>
+            <p class="shipping">Free shipping</p>
+          </div>
+          <p class="sale">Sale</p>
+
+          <p class="product-description">
+            The Freedom KL25Z is an ultra-low-cost development platform built on
+            Arm® Cortex®-M0+ processor.
+          </p>
+          <a href="https://converse.com" target="_blank" class="more-info"
+            >More information &rarr;</a
+          >
+
+          <div class="product-colors">
+            <div class="color" title="FRDM-KL25Z"></div>
+            <div class="color color-blue" title="FRDM-KW40Z"></div>
+            <div class="color color-red" title="FRDM-KL46Z"></div>
+            <div class="color color-yellow" title="FRDM-KW019032"></div>
+            <div class="color color-green" title="FRDM-KL02Z"></div>
+            <div class="color color-brown" title="FRDM-KE16Z"></div>
+          </div>
+        </div>
+
+        <div class="product-details">
+          <h3 class="details-title">Product details</h3>
+          <ul class="details-list">
+            <li>Easy access to MCU I/O, battery-ready, low-power operation</li>
+            <li>You can use mbed.org at no charge</li>
+            <li>Supported by Zephyr OS for developing the IOT</li>
+          </ul>
+        </div>
+        <!-- </div> -->
+        <button class="add-cart">Add to cart</button>
+      </article>
+    </main>
+    <aside>
+      <h2>Description</h2>
+      <p>
+        A product description provides consumers with practical information
+        about a product's benefits, measurements and specifications,
+        composition, use cases and more.
+      </p>
+    </aside>
+  </body>
+</html>
