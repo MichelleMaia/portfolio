@@ -43,15 +43,19 @@ menu {
   gap: 12px;
   padding: 0 40px;
 }
-.btn-app {
-  display: inline-block;
+.btn-app:link,
+.btn-app:visited {
+  text-decoration: none;
   font-size: 16px;
   font-weight: bold;
   background-color: #0ca678;
-  border: none;
-  cursor: pointer;
   color: #fff;
   padding: 8px 12px;
+}
+.btn-app:hover,
+.btn-app:active {
+  background-color: #fff;
+  color: #0ca678;
 }
 .btn-app:last-child {
   background-color: #d6336c;
@@ -85,6 +89,9 @@ section {
 aside {
   background-color: #e9ecef;
   padding-left: 24px;
+}
+aside p {
+  font-weight: 400;
 }
 h2 {
   margin-bottom: 24px;
@@ -439,4 +446,30 @@ tbody tr:nth-child(even) {
 }
 .dot--fill {
   background-color: #087f5b;
+}
+
+/********** About *********/
+.about {
+  width: 80%;
+  margin-top: 100px;
+}
+.h1-about {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about p {
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.about a:link,
+.about a:visited {
+  text-decoration: none;
+  /* display: inline-block; */
+  font-weight: bold;
+  color: #0ca678;
+}
+.about a:hover,
+.about a:active {
+  text-decoration: overline underline;
 }
